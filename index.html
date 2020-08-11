@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center" id="start-prompt">
+          <h1>Quiz Time!</h1>
+          <h6>
+            Try to answer the follwing Harry Potter retaled questions within the
+            time limit. Keep in mind that incorrect answers will penalize your
+            score/time by ten seconds!
+          </h6>
+          <button id="start-game" class="btn btn-info">Let's Start!</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text center">
+          <div id="question-prompt" style="display: none;">
+            <h2 id="question-text"></h2>
+            <div id="question-options"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="timer-container" style="display: none;">
+      <h4>Time Left: <span id="time"></span></h4>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
